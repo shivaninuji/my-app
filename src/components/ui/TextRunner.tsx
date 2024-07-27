@@ -7,13 +7,13 @@ import { useEffect } from "react";
 export default function TextRunner() {
   const words = [
     {
-      text: "Hello,",
+      text: "Hi ! ",
     },
     {
       text: "I'm",
     },
     {
-      text: "Shivani N !",
+      text: "Shivani Nuji",
     },
     {
       text: "👋🏻",
