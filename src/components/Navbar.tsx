@@ -3,9 +3,10 @@
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { IconType } from "react-icons";
-import { AlignRight, FolderOpenDot } from "lucide-react";
+import { AlignRight } from "lucide-react";
 import { BsFolder2Open, BsPeople, BsPerson } from "react-icons/bs";
 import { BiHome } from "react-icons/bi";
+import { RiContactsBookLine } from "react-icons/ri";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -48,6 +49,13 @@ const Navbar = () => {
           </a>
           <a href="#experience" onClick={(e) => handleScroll(e, "experience")}>
             <Option setOpen={setOpen} Icon={BsPeople} text="Experience" />
+          </a>
+          <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>
+            <Option
+              setOpen={setOpen}
+              Icon={RiContactsBookLine}
+              text="Contact"
+            />
           </a>
         </motion.ul>
       </motion.div>

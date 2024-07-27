@@ -1,18 +1,3 @@
-import {
-  SiHtml5,
-  SiCss3,
-  SiC,
-  SiPython,
-  SiMysql,
-  SiPostman,
-  SiJavascript,
-  SiCypress,
-  SiSupabase,
-  SiVsco,
-  SiGit,
-  SiVercel,
-} from "react-icons/si";
-
 const Skills = () => {
   return (
     <div className="my-14">
