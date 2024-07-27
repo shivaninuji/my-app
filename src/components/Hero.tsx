@@ -39,12 +39,6 @@ const Hero = () => {
               </DialogTrigger>
               <DialogContent className="bg-[#202020]">
                 <DialogHeader>
-                  <DialogTitle>Get In Touch</DialogTitle>
-                  <DialogDescription>
-                    I&apos;d love if you reached out to me. Even if it&apos;s
-                    just to say &quot;Hey!&quot;. Don&apos;t hesitate! Drop me a
-                    line and I&apos;ll get back to you ASAP!
-                  </DialogDescription>
                   <div className="py-2 gap-3 flex flex-col">
                     <Link
                       target="_blank"

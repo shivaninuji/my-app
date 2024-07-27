@@ -12,9 +12,9 @@ const Contact = () => {
         Get In Touch
       </h1>
       <p className="mb-8 max-w-xl mx-auto leading-relaxed text-white/75 text-center">
-        I&apos;d love if you reached out to me. Even if it&apos;s just to say
-        &quot;Hey!&quot;. Don&apos;t hesitate! Drop me a line and I&apos;ll get
-        back to you ASAP!{" "}
+        I&apos;d love if you reached out to me, even if it&apos;s just to say
+        &quot; Hey ! &quot;. Don&apos;t hesitate. Drop me a line and I&apos;ll get
+        back to you ASAP !{" "}
       </p>
       <div className="flex gap-5 flex-wrap justify-center items-center">
         <Link
