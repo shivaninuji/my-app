@@ -51,11 +51,8 @@ const Skills = () => {
           width="40"
           alt="MySQL"
         ></img>
-        <img
-          src="https://skillicons.dev/icons?i=supabase"
-          width="40"
-          alt="Supabase"
-        ></img>
+    
+
         {/* <img
           src="https://skillicons.dev/icons?i=express"
           width="40"
