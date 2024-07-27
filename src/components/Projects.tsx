@@ -56,7 +56,7 @@ const Projects = () => {
               <p className="leading-relaxed text-white/75">
                 The application is crafted with the robust MERN stack. It was a
                 fantastic learning experience. For the elegant styling, we
-                harnessed the power of Tailwind CSS. As for hosting, we've
+                harnessed the power of Tailwind CSS. As for hosting, we&apos;ve
                 chosen Vercel for the frontend and Render for the backend,
                 ensuring a seamless and secure user experience.
               </p>
