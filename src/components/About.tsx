@@ -7,7 +7,7 @@ const About = () => {
           <div className="mb-10 flex justify-center items-center md:mb-0">
             <img
               className="object-cover w-60 h-60 md:w-80 md:h-80 rounded-full object-center"
-              alt="shivani"
+              alt=""
               src="/shivani.jpg"
             />
           </div>

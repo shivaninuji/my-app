@@ -20,14 +20,14 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="fixed top-0 right-0">
+    <div className="fixed top-0 right-0 z-50">
       <motion.div animate={open ? "open" : "closed"} className="relative">
         <button
           onClick={() => setOpen((pv) => !pv)}
-          className="flex items-center gap-2 px-3 py-2 rounded-bl-2xl text-indigo-50 bg-primary hover:bg-background transition-colors"
+          className="flex items-center gap-2 px-3 py-2 rounded-bl-2xl text-indigo-50 bg-primary md:hover:bg-[#202020] transition-colors"
         >
           <motion.span variants={iconVariants}>
-            <AlignRight className="w-10 h-10" />
+            <AlignRight className="w-8 h-8" />
           </motion.span>
         </button>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
           initial={wrapperVariants.closed}
           variants={wrapperVariants}
           style={{ originY: "top", translateX: "-100%" }}
-          className="flex flex-col gap-2 p-2 rounded-lg bg-primary shadow-xl absolute top-[120%] left-[50%] w-48 overflow-hidden"
+          className="flex flex-col gap-2 p-2 rounded-lg bg-[#202020] shadow-xl absolute top-[120%] left-[50%] w-48 overflow-hidden"
         >
           <a href="#home" onClick={(e) => handleScroll(e, "home")}>
             <Option setOpen={setOpen} Icon={BiHome} text="Home" />
@@ -68,7 +68,7 @@ const Option = ({
     <motion.li
       variants={itemVariants}
       onClick={() => setOpen(false)}
-      className="flex items-center gap-2 w-full p-2 text-sm font-semibold tracking-wide whitespace-nowrap rounded-md hover:bg-background text-white hover:text-white transition-colors cursor-pointer"
+      className="flex items-center gap-2 w-full p-2 text-sm font-semibold tracking-wide whitespace-nowrap rounded-md text-white hover:text-white hover:bg-primary transition-colors cursor-pointer"
     >
       <motion.span variants={actionIconVariants}>
         <Icon />
