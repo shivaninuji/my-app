@@ -13,7 +13,7 @@ import {
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
-  const resume = "Shivani N - Resume.pdf";
+  const resume = "Shivani N- Resume.pdf";
   const email = "shivaniiinuji@gmail.com";
   const linkedin = "linkedin.com/in/shivani-n-331764227ji";
   const github = "github.com/shivaninuji";
