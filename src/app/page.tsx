@@ -1,12 +1,13 @@
+"use client";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import CursorTrailCanvas from "@/components/ui/CursorTrailCanvas";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-
 
 export default function Home() {
   return (
@@ -34,6 +35,12 @@ export default function Home() {
         </div>
         <Footer />
       </div>
+      {/* Include CursorTrailCanvas at the end of the main element */}
+      <CursorTrailCanvas
+        color="rgb(163, 194, 242, 0.6)"  // Optional: Custom color for the trail
+        className="pointer-events-none z-50 md:flex hidden fixed inset-0 h-full w-full"  // Ensures it covers the viewport and doesn’t interfere with interactions
+        style={{ zIndex: 10 }} // Optional: Adjust z-index if needed
+      />
     </main>
   );
 }
