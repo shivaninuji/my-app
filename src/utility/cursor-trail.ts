@@ -9,7 +9,7 @@ export function cursorTrail(props: CursorTrail) {
   const colorRaw = getComputedStyle(document.documentElement).getPropertyValue(
     "--accent"
   );
-  const accentColor = "#b4ff3920";
+  const accentColor = "rgb(163, 194, 242, 0.4)";
   const { ref, color } = props;
   const ctx = ref.current?.getContext("2d")!;
   let AnimationFeature = {

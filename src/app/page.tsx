@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       {/* Include CursorTrailCanvas at the end of the main element */}
       <CursorTrailCanvas
-        color="rgb(163, 194, 242, 0.6)" // Optional: Custom color for the trail
+        color="rgb(163, 194, 242, 0.25)" // Optional: Custom color for the trail
         className="pointer-events-none z-50 md:flex hidden fixed inset-0 h-full w-full" // Ensures it covers the viewport and doesn’t interfere with interactions
         style={{ zIndex: 10 }} // Optional: Adjust z-index if needed
       />
