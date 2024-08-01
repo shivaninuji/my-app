@@ -1,35 +1,33 @@
-"use client";
-import React from "react";
-import { useCursorTrail } from "@/utility/useCursorTrail";
- // Adjust the path as needed
+import { CSSProperties, useEffect, useRef } from "react";
 
-type CursorTrailComponentProps = {
+import { cursorTrail } from "@/utility/cursor-trail";
+
+export interface CursorTrailCanvasProps {
   color?: string;
   className?: string;
-  style?: React.CSSProperties;
-};
+  style?: CSSProperties;
+}
 
-const CursorTrailComponent: React.FC<CursorTrailComponentProps> = ({
-  color,
-  className,
-  style
-}) => {
-  const canvasRef = useCursorTrail(color);
+export default function CursorTrailCanvas(props: CursorTrailCanvasProps) {
+  const refCanvas = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const { cleanUp, renderTrailCursor } = cursorTrail({
+      ref: refCanvas,
+      color: props.color,
+    });
+    renderTrailCursor();
+
+    return () => {
+      cleanUp();
+    };
+  }, [props.color]);
 
   return (
     <canvas
-      ref={canvasRef}
-      className={className}
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        zIndex: 1000,
-        pointerEvents: "none",
-        ...style
-      }}
-    />
+      ref={refCanvas}
+      className={props.className}
+      style={props.style}
+    ></canvas>
   );
-};
-
-export default CursorTrailComponent;
+}
